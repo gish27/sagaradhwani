@@ -19,6 +19,10 @@ All documents derive from *Taluk Channel Network — Complete Plan* (26 Sep 2026
 | 12 | [Roadmap & Milestones](12-roadmap.md) | Pre-meeting, pre-launch, pilot, network phases | 13, 15.4, 18 |
 | — | [diagrams/](diagrams/) | Standalone SVG/Mermaid sources | — |
 
+## Running the app
+
+The operations platform, public channel page and investor deck that implement these documents live in this repository. See the [root README](../README.md) for setup (`npm install && npm run dev`), demo roles and routes.
+
 ## Status legend used across documents
 
 - **Decided** — settled in the plan (17.1).
