@@ -1,5 +1,7 @@
 # Sagara Dhwani — Taluk Channel Network (TCN)
 
+[![CI](https://github.com/gish27/sagaradhwani/actions/workflows/ci.yml/badge.svg)](https://github.com/gish27/sagaradhwani/actions/workflows/ci.yml)
+
 Digital-only, federated local media network for Karnataka. This repository holds the **six-month Sagara pilot** build: the operations platform, the public channel page, the investor deck, and the full document set.
 
 Source of truth: *Taluk Channel Network — Complete Plan* (26 Sep 2026). Documents live in [`docs/`](docs/README.md).
