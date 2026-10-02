@@ -12,7 +12,7 @@ declare global {
 function open(): DB {
   const dir = path.join(process.cwd(), "data");
   fs.mkdirSync(dir, { recursive: true });
-  const file = process.env.TCN_DB_PATH ?? path.join(dir, "ops.db");
+  const file = process.env.SAGARADHWANI_DB_PATH ?? path.join(dir, "ops.db");
   const db = new Database(file);
   const schema = fs.readFileSync(path.join(process.cwd(), "src", "db", "schema.sql"), "utf8");
   db.exec(schema);

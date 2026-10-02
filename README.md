@@ -33,7 +33,7 @@ npm install
 npm run dev        # http://localhost:3000
 ```
 
-The SQLite database is created and seeded with demo data on first request at `data/ops.db` (gitignored). Override with `TCN_DB_PATH=/path/to/ops.db`.
+The SQLite database is created and seeded with demo data on first request at `data/ops.db` (gitignored). Override with `SAGARADHWANI_DB_PATH=/path/to/ops.db`.
 
 - **Demo roles**: use the role switcher in the `/ops` sidebar (Founder, Content head, Production desk, Sales, Taluk Editor, Field Operator, Investor, …). Permissions are enforced on the server per role — try publishing as a Taluk Editor to see a rule reject.
 - **Reset demo data**: `/ops/policy` → *Reset demo data* (founder/content head), or delete `data/ops.db`.

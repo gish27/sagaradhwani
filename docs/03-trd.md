@@ -1,6 +1,6 @@
 # 03 · Technical Requirements Document (TRD)
 
-**System:** Sagara Dhwani Platform (repo `gish27/tcn`) · **Status:** Draft v1 · **Companion:** [01 · Architecture](01-architecture.md), [02 · PRD](02-prd.md)
+**System:** Sagara Dhwani Platform (repo `gish27/sagaradhwani`) · **Status:** Draft v1 · **Companion:** [01 · Architecture](01-architecture.md), [02 · PRD](02-prd.md)
 
 ## 1. Technology choices
 
@@ -21,7 +21,7 @@
 ## 2. Repository layout
 
 ```
-tcn/
+sagaradhwani/
 ├─ docs/                       # this documentation set
 ├─ data/                       # ops.db, assets/ (git-ignored)
 ├─ src/

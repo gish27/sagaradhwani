@@ -2,7 +2,7 @@ import { cookies } from "next/headers";
 import { userById, users, type User } from "@/db/queries";
 import type { Role } from "@/domain/constants";
 
-export const ROLE_COOKIE = "tcn_user";
+export const ROLE_COOKIE = "sagaradhwani_user";
 
 /** Demo auth: the acting user is chosen by a cookie. Replace with real auth before external use. */
 export async function currentUser(): Promise<User> {
