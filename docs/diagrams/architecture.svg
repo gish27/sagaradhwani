@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" font-family="Segoe UI, Inter, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b45309"/>
+    </marker>
+    <style>
+      .title{font-size:24px;font-weight:700;fill:#111827}
+      .sub{font-size:13px;fill:#6b7280}
+      .h{font-size:15px;font-weight:700;fill:#111827}
+      .t{font-size:12px;fill:#374151}
+      .s{font-size:11px;fill:#6b7280}
+      .box{fill:#ffffff;stroke:#9ca3af;stroke-width:1.5;rx:8}
+      .layer{fill:#f9fafb;stroke:#d1d5db;stroke-width:1.5;rx:12;stroke-dasharray:6 4}
+      .hub{fill:#fff7ed;stroke:#f59e0b}
+      .field{fill:#ecfdf5;stroke:#10b981}
+      .ext{fill:#eff6ff;stroke:#3b82f6}
+      .data{fill:#f5f3ff;stroke:#8b5cf6}
+      .edge{stroke:#4b5563;stroke-width:1.5;fill:none;marker-end:url(#arrow)}
+      .edgeAmber{stroke:#b45309;stroke-width:1.5;fill:none;marker-end:url(#arrowAmber);stroke-dasharray:5 3}
+      .lbl{font-size:11px;fill:#374151}
+    </style>
+  </defs>
+
+  <text x="40" y="44" class="title">Sagara Dhwani · Taluk Channel Network — System Architecture</text>
+  <text x="40" y="66" class="sub">One brand · state → district → taluk · everything produced and published centrally · taluks capture and send up</text>
+
+  <!-- FIELD LAYER -->
+  <rect x="40" y="100" width="300" height="720" class="layer"/>
+  <text x="60" y="128" class="h">TALUK FIELD  (×240 at scale)</text>
+  <text x="60" y="146" class="s">Phone · mic · local relationships</text>
+
+  <rect x="60" y="170" width="260" height="92" class="box field"/>
+  <text x="74" y="192" class="h">Taluk Editor</text>
+  <text x="74" y="212" class="t">Fixes 2–3 local stories + identity piece</text>
+  <text x="74" y="228" class="t">Selects tagged state stories · verifies claims</text>
+  <text x="74" y="244" class="t">Final say on taluk framing · no publishing</text>
+
+  <rect x="60" y="282" width="260" height="92" class="box field"/>
+  <text x="74" y="304" class="h">Field Operator</text>
+  <text x="74" y="324" class="t">Captures video/stills/audio · cutaways</text>
+  <text x="74" y="340" class="t">Files named to standard · upload before cutoff</text>
+  <text x="74" y="356" class="t">Capture log · nightly equipment check</text>
+
+  <rect x="60" y="394" width="260" height="70" class="box field"/>
+  <text x="74" y="416" class="h">District Person (later)</text>
+  <text x="74" y="436" class="t">Zilla panchayat · DC office · district politics</text>
+  <text x="74" y="452" class="t">Feeds all taluks under the district</text>
+
+  <rect x="60" y="484" width="260" height="70" class="box field"/>
+  <text x="74" y="506" class="h">Local creator roster (5–6 / taluk)</text>
+  <text x="74" y="526" class="t">Standing WhatsApp permission</text>
+  <text x="74" y="542" class="t">Credited on screen · one consent, all future use</text>
+
+  <rect x="60" y="574" width="260" height="70" class="box field"/>
+  <text x="74" y="596" class="h">Viewers &amp; tip line</text>
+  <text x="74" y="616" class="t">WhatsApp tips · submissions (written permission)</text>
+  <text x="74" y="632" class="t">Question of the week · citizen grievances</text>
+
+  <rect x="60" y="664" width="260" height="130" class="box field"/>
+  <text x="74" y="686" class="h">Hard field rules</text>
+  <text x="74" y="706" class="t">• Publishes every single day</text>
+  <text x="74" y="722" class="t">• Fixed afternoon cutoff</text>
+  <text x="74" y="738" class="t">• Escalate before shooting anything risky</text>
+  <text x="74" y="754" class="t">• No discounting · no coverage promises · no cash</text>
+  <text x="74" y="770" class="t">• Weekly on-call rotation</text>
+
+  <!-- PLATFORM -->
+  <rect x="400" y="100" width="600" height="720" class="layer"/>
+  <text x="420" y="128" class="h">PLATFORM  (one system · Next.js + SQLite → Postgres)</text>
+  <text x="420" y="146" class="s">Publishing system · asset library · ops · sales · analytics</text>
+
+  <rect x="420" y="170" width="270" height="104" class="box data"/>
+  <text x="434" y="192" class="h">Daily line-up &amp; pipeline</text>
+  <text x="434" y="212" class="t">idea → assigned → captured → scripted →</text>
+  <text x="434" y="228" class="t">approved → produced → published</text>
+  <text x="434" y="244" class="t">Tagged state list · story briefs</text>
+  <text x="434" y="260" class="t">Daily-promise check · buffer bank</text>
+
+  <rect x="710" y="170" width="270" height="104" class="box data"/>
+  <text x="724" y="192" class="h">Capture log &amp; cutoff</text>
+  <text x="724" y="212" class="t">File naming standard · upload timestamps</text>
+  <text x="724" y="228" class="t">Cutoff sweep: arrived / rolled to tomorrow</text>
+  <text x="724" y="244" class="t">Turnaround = footage-in → published-out</text>
+  <text x="724" y="260" class="t">Equipment check log · on-call roster</text>
+
+  <rect x="420" y="294" width="270" height="104" class="box data"/>
+  <text x="434" y="316" class="h">Footage clearance (green / amber / red)</text>
+  <text x="434" y="336" class="t">Classify every non-own asset</text>
+  <text x="434" y="352" class="t">Amber → central desk review before publish</text>
+  <text x="434" y="368" class="t">Red → blocked · permission checklist §6.7</text>
+  <text x="434" y="384" class="t">Takedown handling: item down same day</text>
+
+  <rect x="710" y="294" width="270" height="104" class="box data"/>
+  <text x="724" y="316" class="h">Scripts, approvals &amp; voice</text>
+  <text x="724" y="336" class="t">Facts-first retelling workflow §5.2</text>
+  <text x="724" y="352" class="t">Content head approves before voice</text>
+  <text x="724" y="368" class="t">Named verifier for political content</text>
+  <text x="724" y="384" class="t">Phonetic names/numbers for Kannada TTS</text>
+
+  <rect x="420" y="418" width="270" height="104" class="box data"/>
+  <text x="434" y="440" class="h">Sales · rate card · invoicing</text>
+  <text x="434" y="460" class="t">Fixed card per tier · slot types · exclusivity</text>
+  <text x="434" y="476" class="t">Min 1-month contracts · free first month</text>
+  <text x="434" y="492" class="t">GST invoices · payments · collections owner</text>
+  <text x="434" y="508" class="t">Political ads: central only · MCMC cert ref</text>
+
+  <rect x="710" y="418" width="270" height="104" class="box data"/>
+  <text x="724" y="440" class="h">Identity archive</text>
+  <text x="724" y="460" class="t">Every identity piece stored &amp; tagged</text>
+  <text x="724" y="476" class="t">Six buckets · anniversaries · re-cuts</text>
+  <text x="724" y="492" class="t">Licensing-ready metadata</text>
+  <text x="724" y="508" class="t">Consent references attached</text>
+
+  <rect x="420" y="542" width="270" height="104" class="box data"/>
+  <text x="434" y="564" class="h">Analytics dashboard</text>
+  <text x="434" y="584" class="t">Days published / days elapsed</text>
+  <text x="434" y="600" class="t">Turnaround (median, same-day %)</text>
+  <text x="434" y="616" class="t">Audience per platform · advertiser signings</text>
+  <text x="434" y="632" class="t">Agency-format monthly report §10.6</text>
+
+  <rect x="710" y="542" width="270" height="104" class="box data"/>
+  <text x="724" y="564" class="h">Governance</text>
+  <text x="724" y="584" class="t">Decisions register · open items</text>
+  <text x="724" y="600" class="t">Founder-unblock log (playbook source)</text>
+  <text x="724" y="616" class="t">Role-based access · audit trail</text>
+  <text x="724" y="632" class="t">Consent &amp; permission records</text>
+
+  <rect x="420" y="666" width="560" height="128" class="box data"/>
+  <text x="434" y="688" class="h">Public surfaces</text>
+  <text x="434" y="708" class="t">Sagara Dhwani channel page — one full day of posts, posters, brand, AI voice as identity</text>
+  <text x="434" y="724" class="t">Investor deck — 12 slides (§15.1) · month-3 checkpoint · the ask</text>
+  <text x="434" y="748" class="h">Data</text>
+  <text x="434" y="768" class="t">SQLite (pilot) → Postgres (network) · asset store (raw · finished · posters) · nightly backup · CSV exports</text>
+
+  <!-- HUB / EXTERNAL -->
+  <rect x="1060" y="100" width="300" height="720" class="layer"/>
+  <text x="1080" y="128" class="h">STATE HUB &amp; EXTERNAL</text>
+  <text x="1080" y="146" class="s">Makes 100% of content initially</text>
+
+  <rect x="1080" y="170" width="260" height="150" class="box hub"/>
+  <text x="1094" y="192" class="h">State team (5 for pilot)</text>
+  <text x="1094" y="212" class="t">Content head · daily scriptwriter · rewriter</text>
+  <text x="1094" y="228" class="t">Editor · AI visuals</text>
+  <text x="1094" y="248" class="h">Central owners</text>
+  <text x="1094" y="268" class="t">Production desk owner (turnaround, cutoff)</text>
+  <text x="1094" y="284" class="t">Sales &amp; collections owner</text>
+  <text x="1094" y="304" class="t">Founder — full-time until self-sustaining</text>
+
+  <rect x="1080" y="340" width="260" height="90" class="box ext"/>
+  <text x="1094" y="362" class="h">Platforms</text>
+  <text x="1094" y="382" class="t">YouTube · Facebook · Instagram · WhatsApp</text>
+  <text x="1094" y="398" class="t">Scheduled posting from state desk only</text>
+  <text x="1094" y="414" class="t">Post URLs recorded back for metrics</text>
+
+  <rect x="1080" y="450" width="260" height="90" class="box ext"/>
+  <text x="1094" y="472" class="h">AI services</text>
+  <text x="1094" y="492" class="t">One Kannada TTS voice (brand identity)</text>
+  <text x="1094" y="508" class="t">Image/video generation — history, culture, ads</text>
+  <text x="1094" y="524" class="t">NEVER in news visuals</text>
+
+  <rect x="1080" y="560" width="260" height="90" class="box ext"/>
+  <text x="1094" y="582" class="h">Compliance</text>
+  <text x="1094" y="602" class="t">MCMC pre-certification (political ads)</text>
+  <text x="1094" y="618" class="t">GST · TDS · CA · media lawyer</text>
+  <text x="1094" y="634" class="t">Copyright Act §52 fair dealing (narrow)</text>
+
+  <rect x="1080" y="670" width="260" height="124" class="box ext"/>
+  <text x="1094" y="692" class="h">Advertisers (3 tiers)</text>
+  <text x="1094" y="712" class="t">Taluk: shop, clinic, coaching, dealer</text>
+  <text x="1094" y="728" class="t">District: dealerships, hospital/school groups</text>
+  <text x="1094" y="744" class="t">State: brands, agencies, govt, parties</text>
+  <text x="1094" y="768" class="t">"Inventory that does not exist" — one desk</text>
+  <text x="1094" y="784" class="t">sells all three tiers</text>
+
+  <!-- EDGES field -> platform -->
+  <path d="M320,216 L420,216" class="edge"/>
+  <text x="330" y="208" class="lbl">line-up · briefs</text>
+  <path d="M320,328 L710,222" class="edge"/>
+  <text x="330" y="318" class="lbl">footage · capture log</text>
+  <path d="M320,519 L420,470" class="edge"/>
+  <text x="330" y="512" class="lbl">consents</text>
+  <path d="M320,609 L420,346" class="edge"/>
+  <text x="330" y="602" class="lbl">tips · submissions</text>
+
+  <!-- platform -> field -->
+  <path d="M420,238 L320,238" class="edgeAmber"/>
+  <text x="326" y="256" class="lbl" fill="#b45309">tagged state list</text>
+
+  <!-- hub -> platform -->
+  <path d="M1080,245 L980,222" class="edge"/>
+  <path d="M1080,260 L980,346" class="edge"/>
+  <path d="M1080,290 L690,470" class="edge"/>
+  <text x="990" y="214" class="lbl">scripts · approvals</text>
+  <text x="990" y="470" class="lbl">rate card · invoices</text>
+
+  <!-- platform -> external -->
+  <path d="M980,700 L1080,385" class="edge"/>
+  <text x="985" y="690" class="lbl">publish · post URLs</text>
+  <path d="M980,330 L1080,495" class="edge"/>
+  <text x="985" y="340" class="lbl">voice · visuals</text>
+  <path d="M690,500 L1080,605" class="edgeAmber"/>
+  <text x="880" y="565" class="lbl" fill="#b45309">political ads → MCMC</text>
+  <path d="M690,490 L1080,730" class="edge"/>
+  <text x="900" y="665" class="lbl">contracts · collections</text>
+</svg>
